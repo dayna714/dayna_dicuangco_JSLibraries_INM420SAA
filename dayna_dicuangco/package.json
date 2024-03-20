@@ -1,0 +1,15 @@
+{
+  "name": "js_libraries_webpage_inm420saa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "keywords": [],
+  "author": "Dayna",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

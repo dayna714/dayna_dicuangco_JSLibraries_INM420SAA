@@ -1,0 +1,385 @@
+header {
+    max-width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 5px 12px 0 12px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.logo {
+    font-family: "Gayathri", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 40px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.cart-favs {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.cart-heart-icons {
+    width: 30px;
+    height: auto;
+}
+
+/* NAV + BURGER MENU */
+#menu__toggle {
+    opacity: 0;
+    position:fixed;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 32px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.219);
+    transition-duration: .25s;
+    z-index: 2;
+}
+
+.nav__item {
+    display: block;
+    padding: 12px 24px;
+    color: #000000;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.other_categories {
+    margin-top: 50px;
+}
+
+.bottom {
+    color: #949391;
+}
+
+.nav__item:hover {
+    background-color: #e7e7e7;
+    text-decoration: none;
+}
+
+.main__nav{
+    display: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.57);
+    padding: 20px;
+    z-index: 2;
+}
+
+.discover-text {
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.save-text {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #282626;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #000000;
+}
+
+.hero-imgs {
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.spring-heading {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: auto;
+    margin-top: 18px;
+    padding: 20px;
+}
+
+.sp-imgs-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: auto;
+    padding: 0 18px;
+}
+
+.sp-images {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* lightbox albumLabel change font */
+.lb-details .album-label, .lb-caption {
+    font-family: "Mulish", sans-serif; 
+    color: #FFF;
+    font-weight: 300;
+}
+
+.gsap-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+.gsap-text {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.85;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.bold-text {
+    font-weight: 800;
+}
+
+.tilt {
+    width: fit-content;
+    position: absolute;
+}
+
+.tilt-img {
+    width: 200px;
+    height: auto;
+    transform: rotate(10deg);
+}
+
+.footer-link-container {
+    height: 150px;
+    background-color: #949391;
+    margin-top: 32px;
+    padding: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.footer-link-container li a {
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 14px;
+    transition-duration: .25s;
+}
+
+.footer-link-container li a:hover {
+    color: #000;
+}
+
+.back-to-top {
+    margin-top: 24px;
+}
+
+/* Desktop Responsive */
+@media (min-width: 768px) {
+    .burger-nav {
+        display: none;
+    }
+
+    .logo {
+        font-size: 32px;
+        margin-left: 20px; 
+    }
+
+    .cart-favs {
+        gap: 20px; 
+        justify-self: end;
+        padding: none;
+    }
+
+    .cart-heart-icons {
+        width: 32px;
+    }
+
+    .main__nav {
+        display: flex; 
+        margin-left: auto;
+    }
+
+    .nav__item {
+        font-size: 15px;
+        gap: 12px;
+    }
+
+    .hero-imgs {
+        height: 450px;
+    }
+
+    .text-overlay {
+        padding: 50px;
+    }
+
+    .discover-text {
+        font-size: 32px;
+    }
+
+    .save-text {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        font-size: 18px;
+    }
+
+    .spring-heading {
+        font-size: 22px;
+    }
+
+    .sp-imgs-container {
+        flex-wrap: nowrap;
+    }
+
+    .sp-images {
+        height: 400px;
+        max-height: 100%;
+        width: auto;
+    }
+
+    .gsap-text {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .tilt-img {
+        width: 280px;
+    }
+
+    .footer-link-container {
+        height: 80px;
+        margin-top: 40px;
+        padding: 20px;
+        line-height: 1.75;
+        text-align: left;
+    }
+
+    .footer-link-container li a {
+        font-size: 16px;
+    }
+    
+    .link-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 28px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .back-to-top {
+        margin-top: 0;
+        margin-left: 100px;
+    }
+}
